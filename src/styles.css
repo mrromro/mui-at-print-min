@@ -1,0 +1,25 @@
+body {
+  font-size: 12pt;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+@page Portrait {
+  size: A5 portrait;
+}
+
+@page Landscape {
+  size: A5 landscape;
+}
+
+.print-portrait {
+  page: Portrait;
+  border: 1px solid red;
+}
+
+.print-landscape {
+  page: Landscape;
+  border: 1px solid lime;
+}
