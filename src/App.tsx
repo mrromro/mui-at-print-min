@@ -18,7 +18,7 @@ export default function App() {
           Portrait
         </Typography>
       </Box>
-      <Box className="print-landscape">
+      <Box className="print-landscape" bgcolor="black" color="white">
         <Typography variant="h4" component="h1" gutterBottom>
           Landscape
         </Typography>

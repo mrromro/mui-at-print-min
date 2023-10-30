@@ -15,7 +15,7 @@ function LongTable() {
   })
   return (
     <Stack>
-      <Table size="small">
+      <Table stickyHeader size="small">
         <Header table={table} />
         <Body table={table} />
       </Table>
