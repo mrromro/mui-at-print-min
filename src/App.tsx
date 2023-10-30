@@ -1,10 +1,14 @@
 import Typography from "@mui/material/Typography"
 import Box from "@mui/material/Box"
 import "./styles.css"
+import { Button, Stack } from "@mui/material"
 
 export default function App() {
   return (
-    <Box>
+    <Stack gap={2} alignItems="center" sx={{ displayPrint: "contents" }}>
+      <Button variant="contained" color="ochre" sx={{ displayPrint: "none" }}>
+        Won't be printed
+      </Button>
       <Box className="print-portrait">
         <Typography variant="h4" component="h1" gutterBottom>
           Portrait
@@ -15,6 +19,6 @@ export default function App() {
           Landscape
         </Typography>
       </Box>
-    </Box>
+    </Stack>
   )
 }
