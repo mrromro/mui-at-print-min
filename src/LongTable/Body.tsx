@@ -1,18 +1,19 @@
-import { TableBody, TableCell, TableRow } from "@mui/material"
+import { TableBody } from "@mui/material"
 import { type Table, flexRender } from "@tanstack/react-table"
 import { type Person } from "./types"
+import { StyledTableCell, StyledTableRow } from "./styled"
 
 export function Body({ table }: { table: Table<Person> }) {
   return (
     <TableBody>
       {table.getRowModel().rows.map((row) => (
-        <TableRow key={row.id}>
+        <StyledTableRow key={row.id}>
           {row.getVisibleCells().map((cell) => (
-            <TableCell key={cell.id}>
+            <StyledTableCell key={cell.id}>
               {flexRender(cell.column.columnDef.cell, cell.getContext())}
-            </TableCell>
+            </StyledTableCell>
           ))}
-        </TableRow>
+        </StyledTableRow>
       ))}
     </TableBody>
   )
