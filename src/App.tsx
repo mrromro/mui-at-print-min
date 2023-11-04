@@ -7,8 +7,13 @@ import LongTable from "./LongTable"
 export default function App() {
   return (
     <Stack gap={2} alignItems="center" sx={{ displayPrint: "contents" }}>
-      <Button variant="contained" color="ochre" sx={{ displayPrint: "none" }}>
-        Won't be printed
+      <Button
+        variant="contained"
+        color="ochre"
+        sx={{ displayPrint: "none" }}
+        onClick={() => window.print()}
+      >
+        Print
       </Button>
       <Box className="print-portrait">
         <LongTable />
