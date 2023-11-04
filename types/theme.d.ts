@@ -1,12 +1,12 @@
-import { Palette, PaletteOptions } from "@mui/material/styles"
+import { PaletteColor, SimplePaletteColorOptions } from "@mui/material/styles"
 
 declare module "@mui/material/styles" {
   interface Palette {
-    ochre: Palette["primary"]
+    ochre: PaletteColor["primary"]
   }
 
   interface PaletteOptions {
-    ochre?: PaletteOptions["primary"]
+    ochre?: SimplePaletteColorOptions
   }
 }
 
